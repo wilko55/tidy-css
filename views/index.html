@@ -1,20 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html>
   <head>
     <link rel='stylesheet' href='/stylesheets/tidy-css.css' />
   </head>
   <body>
-    <nav class="menu">
+    <div class="header-image">
+       <h1>Tidy CSS</h1>
+       <h4>A stripped down css framework</h4>
+    </div>  
+    <nav class="simple-menu">
       <ul>
         <li><a href="#">Menu item 1</a></li>
         <li><a href="#">Menu item 2</a></li>
         <li><a href="#">Item 3</a></li>
       </ul>
     </nav>
-    <div class="header">
-       <h1>Tidy CSS</h1>
-       <h4>A stripped down css framework</h4>
-    </div>  
     <main>
       <h3>Headings</h3>
       <h1>h1 heading</h1>
@@ -66,35 +66,43 @@
       <hr>
 
       <h3>Form fields</h3>
-      <div class="form-fields">
+      <div class="row">
         <form>
-          <label for="text-input"> Text input
-            <input id="text-input" type="text">
-          </label>
-
-          <label for="select-input"> Select box
-            <select id="select-input">
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-            </select>
-          </label>
-
-          Radio buttons
-          <label>Radio 1
-            <input type="radio" name="Radio" value="Radio 1">
-          </label>
-          <label>Radio 2
-            <input type="radio" name="Radio" value="Radio 2">
-          </label>
-
-          Checkboxes
-          <label>Checkbox 1
-            <input type="checkbox" name="checkbox" value="checkbox 1">
-          </label>
-          <label>Checkbox 2
-            <input type="checkbox" name="checkbox" value="checkbox 2">
-          </label>
+          <div class="col col-3">
+            <div class="col col-12">
+            <label for="text-input"> Text input </label>
+            </div>
+            <div class="col col-12">
+              <input id="text-input" type="text">
+            </div>
+          </div>
+          <div class="col col-3">
+            <label for="select-input"> Select box
+              <select id="select-input">
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+              </select>
+            </label>
+          </div>
+          <div class="col col-3">
+            Radio buttons<br>
+            <label>Radio 1
+              <input type="radio" name="Radio" value="Radio 1">
+            </label>
+            <label>Radio 2
+              <input type="radio" name="Radio" value="Radio 2">
+            </label>
+          </div>
+          <div class="col col-3">
+            Checkboxes<br>
+            <label>Checkbox 1
+              <input type="checkbox" name="checkbox" value="checkbox 1">
+            </label>
+            <label>Checkbox 2
+              <input type="checkbox" name="checkbox" value="checkbox 2">
+            </label>
+          </div>
         </form>
       </div>
 
@@ -116,7 +124,9 @@
           <div class="col col-3">
             col-3
           </div>
-          <div class="col col-12">col-12</div>
+          <div class="col col-12">
+            col-12
+          </div>
         </div>
         <div class="col col-6">
           col-6
